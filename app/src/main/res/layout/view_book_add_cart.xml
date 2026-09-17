@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="144dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/description_id"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Rating:"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="512dp" />
+            <RatingBar
+                android:id="@+id/item_ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:theme="@style/RatingBar" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="#C5C4C4" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Genre:"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+            <TextView
+                android:id="@+id/genre_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Fantasy"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="#C5C4C4" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Authors:"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+            <TextView
+                android:id="@+id/authors_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="nterdum et malesuada fames ac ante ipsum primis in faucibus."
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="#C5C4C4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Price:"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+            <TextView
+                android:id="@+id/price_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="$100.00"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="#C5C4C4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <Button
+                android:id="@+id/btn_negative_id"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#03A9F4"
+                android:text="-"
+                android:textColor="#ffffff"></Button>
+
+
+            <TextView
+                android:id="@+id/qty_id"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border_layout"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_positive_id"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#03A9F4"
+                android:text="+"
+                android:textColor="#ffffff"></Button>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="#C5C4C4" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:text="ras ultricies sodales commodo. Curabitur eu lectus eu augue tristique commodo eu a mauris. Interdum etmalesuada fames ac ante ipsum primis in faucibus. Praesent non tincidunt sem. Proin sed mauris ac metus vehicula luctus. Sed sit"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/title_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/title_id"
+        app:layout_constraintTop_toBottomOf="@+id/title_id" />
+
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="The Grapes of Wrath"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

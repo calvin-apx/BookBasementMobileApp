@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard_id"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/search_id"
+            android:icon="@drawable/search"
+            android:title="Search" />
+        <item
+            android:id="@+id/cart_id"
+            android:icon="@drawable/cart"
+            android:title="Cart List" />
+        <item
+            android:id="@+id/profile_id"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/notification_id"
+            android:icon="@drawable/notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/message_id"
+            android:icon="@drawable/message"
+            android:title="Messages" />
+        <item
+            android:id="@+id/donate_book_id"
+            android:icon="@drawable/donate"
+            android:title="Donate Book" />
+        <item
+            android:id="@+id/sell_book_id"
+            android:icon="@drawable/sell"
+            android:title="Sell Book" />
+
+    </group>
+    <item android:title="Options">
+        <menu>
+            <item
+                android:id="@+id/setting_id"
+                android:icon="@drawable/settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/logout_id"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

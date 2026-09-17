@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/image_id"
+            android:layout_toRightOf="@+id/image_id"
+            android:text="Calvin C. Anonar" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_on"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/name_id"
+            android:visibility="gone"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/image_id"
+            android:layout_toRightOf="@+id/image_id"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#8BC34A"
+            app:civ_border_width="7dp"
+            android:layout_marginStart="-15dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_off"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/name_id"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/image_id"
+            android:layout_toRightOf="@+id/image_id"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#BFBFBF"
+            app:civ_border_width="7dp"
+            android:layout_marginStart="-15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_id"
+            android:layout_toRightOf="@id/image_id"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/last_message"
+            android:textColor="@color/colorSuccess"
+            android:layout_toEndOf="@id/image_id"
+            android:maxLines="1"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

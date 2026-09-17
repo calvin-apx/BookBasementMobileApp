@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/bell"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/notifcation_id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification_2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_count_id"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:cardCornerRadius="10dp"
+        android:background="@android:color/holo_red_dark"
+        app:cardBackgroundColor="@android:color/holo_red_dark"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/notifcation_id"
+        app:layout_constraintEnd_toEndOf="@+id/notifcation_id">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/count_notificiation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

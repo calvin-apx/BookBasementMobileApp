@@ -1,0 +1,7 @@
+ballpen
+laptop
+cellphone
+coffee
+table
+pencil
+books

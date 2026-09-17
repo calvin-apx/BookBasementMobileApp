@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="230dp">
+        <ImageView
+            android:id="@+id/image_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@android:color/white" />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="The Grapes Of Wrath"
+            android:textColor="#8D8D8D"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/authors_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling."
+            android:textColor="#A7A7A7" />
+
+        <RatingBar
+            android:id="@+id/item_ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:theme="@style/RatingBar" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Price"
+                android:textColor="#939393"
+                android:textSize="13dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/price_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P 300"
+                android:textColor="#03A9F4"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_background"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/btn_negative_id"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/negative" />
+
+                <TextView
+                    android:id="@+id/qty_id"
+                    android:layout_width="70dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="100"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/btn_positive_id"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/positive" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#8F8F8F"
+            android:text="Description"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:background="#D8D7D7"/>
+
+        <TextView
+            android:id="@+id/description_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+Harry Potter - Wikipediaen.wikipedia.org › wiki › Harry_Potter
+Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. ...
+Since the release of the first novel, Harry Potter and the Philosopher's Stone, on 26 June ...
+The series continues with Harry Potter and the Chamber of Secrets, ...
+In the fifth book, Harry Potter and the Order of the Phoenix, Harry must"
+            android:textColor="#A8A8A8"
+            android:textSize="12dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Total Price"
+                android:textColor="#939393"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/total_price_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P 3,500"
+                android:textColor="#797878"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <Button
+                android:id="@+id/add_to_cart"
+                android:layout_width="148dp"
+                android:layout_height="42dp"
+                android:background="@drawable/button_background"
+                android:drawableLeft="@drawable/add_cart_logo"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:text="ADD TO CART"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>

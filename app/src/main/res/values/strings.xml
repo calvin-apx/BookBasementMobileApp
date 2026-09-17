@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">BookBasement_02</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="errorBookTitle">Please input Book Title</string>
+    <string name="errorBookPrice">Please input valid Book Price</string>
+    <string name="errorPBookBrand">Please input valid Book brand</string>
+    <string name="errorBookDescriptiveTitle">Please input valid book Descriptive Title</string>
+    <string name="errorBookQuantity">Please input valid book Quantity</string>
+    <string name="errorBookGenre">Please input Book genre</string>
+    <string name="errorBookDescription">Please input valid book Description</string>
+    <string name="errorBookAuthor">Please input valid book Author</string>
+
+    <string name="error_name">Please Input name</string>
+    <string name="error_email">Please Input Email</string>
+    <string name="error_password">Please Input Password</string>
+    <string name="error_phone">Please Input Phone Number</string>
+    <string name="error_date">Please Input Birth Date</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="title_activity_container2">Container</string>
+    <string-array name="month_names">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="location">
+        <item>Ayala Center Cebu</item>
+        <item>SM City Cebu</item>
+        <item>University Of Banilad</item>
+        <item>Banilad Town Centre</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Normal</item>
+        <item>Recycling Facility</item>
+    </string-array>
+</resources>

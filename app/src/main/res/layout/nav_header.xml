@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@drawable/top_nav_bg"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image_id"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/user_p1" />
+
+    <TextView
+        android:id="@+id/username_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/top_nav_profile"
+        android:drawablePadding="5dp"
+        android:paddingTop="8dp"
+        android:text="Calvin C. Anonar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/user_email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/top_nav_email"
+        android:drawablePadding="5dp"
+        android:text="anonar.calvin@gmail.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</LinearLayout>
